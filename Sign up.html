@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <!-- <link rel="shortcut icon"type="x-icon" href="https://thumbs.dreamstime.com/b/login-icon-button-vector-illustration-isolated-white-background-126997728.jpg" -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="main">
+       <div class="text">
+        <h1>Sign in</h1>  
+        <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+        <input class="inp1" type="text" id="email" placeholder="Email"><br>
+        <input  class="inp2" type="password" id="pass" placeholder="Password"> 
+        <p>Forgot Password?</p>
+        <button id="submitSignIn">Login</button>
+        <div class="member">
+        <p>Registe Now? <a href="./Login.html">
+            Login
+        </p>
+        </div>
+        
+<script>
+    function fun(){
+    var Email = document.getElementById('email');
+    var Password = document.getElementById('pass');
+
+      if (Email == 'rabnawazz2000@gmail.com' && Password == 123456) 
+      {
+       alert("Login Succeesfull");
+        window.location.assign('index.html');
+       console.log(fun)
+     }
+      else{
+         alert("Wrong Entry Invalid");
+         return;
+     }
+ }
+
+</script>
+
+       </div>
+    </div>
+</body>
+</html>

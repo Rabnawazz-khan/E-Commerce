@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="shortcut icon"type="x-icon" href="https://thumbs.dreamstime.com/b/login-icon-button-vector-illustration-isolated-white-background-126997728.jpg" -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+     
+    <div class="main">
+       <div class="text">
+        <h1> Login</h1> 
+        <div id="signInMessage" class="messageDiv"></div>
+        <input class="inp1" id="text" placeholder="UserName"><br>
+        <input  class="inp2" id="password" placeholder="PhoneNumber"> 
+        <input class="inp1" id="email" placeholder="Email"><br>
+        <input  class="inp2" id="pass" placeholder="Password"> 
+        <p>Forgot Password?</p>
+        <button id="submit">Login</button>
+        <div>
+        <p>Not a member? <a href="./Sign up.html">
+            Sign Up
+        </p>
+        </div>
+       </div>
+
+<script>
+    function submit(){
+    var UserName = document.getElementById("text");
+    var PhoneNumber = document.getElementById("password");
+    var Email = document.getElementById("email");
+    var password = document.getElementById("pass");
+
+    if (Email === 'rabnawazz2000@gmail.com' && password == 123456) {
+       alert("Succees full !");
+        window.location.assign("index.html");
+     }
+     else{
+        alert("Wrong Entry Invalid");
+     }
+}
+
+</script>
+
+    </div>
+
+
+</script>
+
+<script type="module" src="firebase.js"></script>
+
+
+</body>
+</html>
